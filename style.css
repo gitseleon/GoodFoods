@@ -1,6 +1,18 @@
 body {
   font-family: "Montserrat";
 }
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(100);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 #title {
   background-color: #ff4c68;
   color: white;
@@ -27,9 +39,10 @@ h3 {
 }
 
 .imgRtt {
-  transform: rotate(-10deg);
+/*   transform: rotate(-10deg); */
   width: 25rem;
   height: 25rem;
+  animation: fade-up 5s;
 }
 
 #features {
